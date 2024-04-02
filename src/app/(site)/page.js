@@ -1,11 +1,9 @@
-import { Button } from '@/components/ui/button';
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className='w-screen h-screen grid content-center bg-background text-foreground'>
-      <Button className='bg-primary text-primary-foreground hover:bg-secondary'>
-        Merhaba
-      </Button>
+    <main className=''>
+      <div className='flex h-full items-start justify-center p-6'>
+        <span className='font-semibold'>Two</span>
+      </div>
     </main>
   );
 }
