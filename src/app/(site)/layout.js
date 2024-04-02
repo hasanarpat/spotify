@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
                 defaultSize={55}
                 minSize={20}
                 maxSize={82}
-                className='rounded-xl bg-gradient-to-b from-slate-400 to-primary'
+                className='rounded-xl'
               >
                 {children}
               </ResizablePanel>
