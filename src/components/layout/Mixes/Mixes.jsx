@@ -30,10 +30,10 @@ const Mixes = () => {
         <div
           className={cn(
             'w-full grid gap-1',
-            width < 600 ? 'grid-cols-1 h-60' : 'grid-cols-4 h-12'
+            width < 800 ? 'grid-cols-1 h-60' : 'grid-cols-4 h-12'
           )}
         >
-          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 flex items-center gap-2 hover:bg-zinc-400/10 rounded-md justify-between '>
+          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
               <div className='rounded-sm relative w-[36px] h-[36px]'>
                 <Image
@@ -48,7 +48,7 @@ const Mixes = () => {
               </span>
             </div>
             <div className='text-green-600 mr-2'></div>
-          </div>
+          </div>{' '}
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
               <div className='rounded-sm relative w-[36px] h-[36px]'>
