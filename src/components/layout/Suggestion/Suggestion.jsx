@@ -29,7 +29,7 @@ const Suggestion = () => {
   console.log(tags);
 
   return (
-    <div className='flex gap-4 w-full' ref={ref}>
+    <div className='flex gap-1 w-full' ref={ref}>
       {/* for multiple sizes (widths) change number of suggestions like on spotify */}
       {/* MAP ON HERE FOR A NUMBER TO DISPLAY AS MUCH AS NUMBER */}
       {/* <div className='flex flex-col items-start w-full hover:bg-zinc-500/20 p-2 rounded-md relative group'>

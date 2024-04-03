@@ -4,6 +4,7 @@ import { Progress } from '@/components/ui/progress';
 import {
   Shuffle,
   Play,
+  ChevronDown,
   SkipBack,
   SkipForward,
   IterationCw,
@@ -21,18 +22,19 @@ const Player = () => {
     <div className='absolute bottom-0 bg-background w-full h-20 p-2 px-4'>
       <div className='w-full h-full flex items-center justify-between'>
         <div className='flex gap-3'>
-          <div className='relative w-12 h-12'>
+          <div className='relative w-14 h-14 group'>
             <Image
               alt='album'
               src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
               fill
               className='object-cover aspect-square rounded-sm'
             />
+            <ChevronDown className='absolute hidden group-hover:block bg-primary text-white/70 hover:text-white rounded-full p-1 h-6 w-6 right-0 hover:scale-105' />
           </div>
           <div className='flex flex-col justify-center text-primary-foreground'>
             <Link
               href='/go-to-album'
-              className='text-white/65 text-sm hover:text-white hover:underline'
+              className='text-white text-sm hover:underline'
             >
               Eveyone I love Is Dead
             </Link>

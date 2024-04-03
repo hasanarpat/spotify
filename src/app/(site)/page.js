@@ -88,6 +88,36 @@ export default function HomePage() {
           </div>
           <Suggestion />
         </div>
+        <div className='w-full p-6 px-8 bg-primary'>
+          <div className='flex items-center justify-between w-full'>
+            <Link href='/go-to-suggestions' className='hover:underline'>
+              <span className='text-lg font-bold'>Günlük müzik ihtiyacın</span>
+            </Link>
+            <Link
+              href='/go-to-suggestions'
+              className='text-[15px] text-zinc-300 hover:underline'
+            >
+              Tümünü Göster
+            </Link>
+          </div>
+          <Suggestion />
+        </div>
+        <div className='w-full p-6 px-8 bg-primary'>
+          <div className='flex items-center justify-between w-full'>
+            <Link href='/go-to-suggestions' className='hover:underline'>
+              <span className='text-lg font-bold'>
+                Lifelover ile benzer diğer müzikler
+              </span>
+            </Link>
+            <Link
+              href='/go-to-suggestions'
+              className='text-[15px] text-zinc-300 hover:underline'
+            >
+              Tümünü Göster
+            </Link>
+          </div>
+          <Suggestion />
+        </div>
         <Footer />
       </div>
     </main>
