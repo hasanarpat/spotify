@@ -35,7 +35,7 @@ const Mixes = () => {
         >
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
-              <div className='rounded-sm relative w-[36px] h-[36px]'>
+              <div className='rounded-sm relative w-[64px] h-[64px]'>
                 <Image
                   alt='album'
                   src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -51,7 +51,7 @@ const Mixes = () => {
           </div>{' '}
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
-              <div className='rounded-sm relative w-[36px] h-[36px]'>
+              <div className='rounded-sm relative w-[64px] h-[64px]'>
                 <Image
                   alt='album'
                   src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -67,7 +67,7 @@ const Mixes = () => {
           </div>{' '}
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
-              <div className='rounded-sm relative w-[36px] h-[36px]'>
+              <div className='rounded-sm relative w-[64px] h-[64px]'>
                 <Image
                   alt='album'
                   src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -83,7 +83,7 @@ const Mixes = () => {
           </div>{' '}
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
-              <div className='rounded-sm relative w-[36px] h-[36px]'>
+              <div className='rounded-sm relative w-[64px] h-[64px]'>
                 <Image
                   alt='album'
                   src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -108,7 +108,7 @@ const Mixes = () => {
         >
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
-              <div className='rounded-sm relative w-[36px] h-[36px]'>
+              <div className='rounded-sm relative w-[64px] h-[64px]'>
                 <Image
                   alt='album'
                   src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -124,7 +124,7 @@ const Mixes = () => {
           </div>{' '}
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
-              <div className='rounded-sm relative w-[36px] h-[36px]'>
+              <div className='rounded-sm relative w-[64px] h-[64px]'>
                 <Image
                   alt='album'
                   src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -140,7 +140,7 @@ const Mixes = () => {
           </div>{' '}
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
-              <div className='rounded-sm relative w-[36px] h-[36px]'>
+              <div className='rounded-sm relative w-[64px] h-[64px]'>
                 <Image
                   alt='album'
                   src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -156,7 +156,7 @@ const Mixes = () => {
           </div>{' '}
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
             <div className='flex items-center gap-2'>
-              <div className='rounded-sm relative w-[36px] h-[36px]'>
+              <div className='rounded-sm relative w-[64px] h-[64px]'>
                 <Image
                   alt='album'
                   src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'

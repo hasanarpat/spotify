@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useEffect, useRef, useState } from 'react';
+import Link from "next/link"
 
 const Suggestion = () => {
   const [width, setWidth] = useState(0);
@@ -53,7 +54,7 @@ const Suggestion = () => {
         </div> */}
       {tags.map((item) => (
         <>
-          <div className='flex flex-col items-start w-full hover:bg-zinc-500/20 p-2 rounded-md relative group'>
+          <Link href="/" className='flex flex-col items-start w-full hover:bg-zinc-500/20 p-2 rounded-md relative group'>
             <div className='w-full aspect-square relative rounded-lg'>
               <Image
                 alt='album'
@@ -63,8 +64,8 @@ const Suggestion = () => {
               />
             </div>
             <h5 className='font-semibold mt-2'>Daily Mix 1</h5>
-            <p className='text-sm text-zinc-500'>
-              Cem Karaca, Hande Mehan, Yavuz Çetin ve daha fazlası
+            <p className='text-xs font-medium text-zinc-400 tracking-wider'>
+              Cem Karaca,Hande Mehan, Yavuz Çetin, ve daha fazlası
             </p>
             <Button
               variant='ghost'
@@ -72,7 +73,7 @@ const Suggestion = () => {
             >
               <Play className='fill-black stroke-black' />
             </Button>
-          </div>
+          </Link>
         </>
       ))}
     </div>

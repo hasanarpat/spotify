@@ -168,7 +168,9 @@ const PlayingNow = () => {
             <div className='flex flex-col gap-3'>
               <div className='flex items-center justify-between mt-2'>
                 <div className='flex flex-col'>
-                  <h3>Lifelover</h3>
+                  <Link href='/go-to-artist' className='text-white font-medium'>
+                    Lifelover
+                  </Link>
                   <p className='text-xs'>Ana Sanatçı</p>
                 </div>
                 <Button
@@ -180,14 +182,18 @@ const PlayingNow = () => {
               </div>
               <div className='flex items-center justify-between mt-1'>
                 <div className='flex flex-col'>
-                  <h3>Lifelover</h3>
-                  <p className='text-xs'>Ana Sanatçı</p>
+                  <Link href='/go-to-artist' className='text-white font-medium'>
+                    Daniel Srebranic
+                  </Link>
+                  <p className='text-xs'>Lyricist</p>
                 </div>
               </div>
               <div className='flex items-center justify-between mt-1'>
                 <div className='flex flex-col'>
-                  <h3>Lifelover</h3>
-                  <p className='text-xs'>Ana Sanatçı</p>
+                  <Link href='/go-to-artist' className='text-white font-medium'>
+                    In The Woods
+                  </Link>
+                  <p className='text-xs'>Composer</p>
                 </div>
               </div>
             </div>
