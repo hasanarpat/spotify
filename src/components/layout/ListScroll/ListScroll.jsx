@@ -1,13 +1,18 @@
+'use client';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Button } from '@/components/ui/button';
 import { Search, List } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
+import { Input } from '@/components/ui/input';
 
 const tags = Array.from({ length: 50 }).map(
   (_, i, a) => `v1.2.0-beta.${a.length - i}`
 );
 const ListScroll = () => {
+  const [openSearch, setOpenSearch] = useState(false);
+
   return (
     <div className='w-full flex flex-col gap-2'>
       <div className='font-semibold flex items-center gap-2 px-2'>
@@ -30,9 +35,26 @@ const ListScroll = () => {
           Albümler
         </Button>
       </div>
-      <div className='font-medium text-sm text-primary-foreground cursor-pointer flex items-center justify-between w-full'>
+      <div className='font-medium text-sm text-primary-foreground cursor-pointer flex items-center justify-between w-full mt-2'>
         <div>
-          <Search className='hover:scale-105 hover:text-white hover:bg-zinc-500/50 rounded-full p-2 w-9 h-9' />
+          {openSearch ? (
+            <div className='relative w-full flex bg-zinc-800/60'>
+              <Search
+                className='hover:scale-105 hover:text-white hover:bg-zinc-500/50 rounded-full p-2 w-9 h-9 absolute left-0'
+                onClick={() => setOpenSearch(false)}
+              />
+              <Input
+                type='text'
+                placeholder='Kitaplığında Ara'
+                className='pl-8'
+              />
+            </div>
+          ) : (
+            <Search
+              className='hover:scale-105 hover:text-white hover:bg-zinc-500/50 rounded-full p-2 w-9 h-9'
+              onClick={() => setOpenSearch(true)}
+            />
+          )}
         </div>
         <div className='flex items-center gap-2 hover:text-white '>
           <span>Son Çalınanlar</span>
