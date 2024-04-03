@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
               <ResizableHandle className='bg-transparent' />
               <ResizablePanel
                 defaultSize={55}
-                minSize={20}
+                minSize={30}
                 maxSize={82}
                 className='rounded-xl'
               >
@@ -147,7 +147,7 @@ export default function RootLayout({ children }) {
               <ResizableHandle className='bg-transparent' />
               <ResizablePanel
                 defaultSize={25}
-                minSize={18}
+                minSize={0}
                 maxSize={20}
                 className='rounded-xl bg-primary'
                 // className='hidden' when user resize panel 1 larger than maybe 50% hide third panel
