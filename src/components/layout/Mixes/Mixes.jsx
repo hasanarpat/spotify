@@ -22,70 +22,79 @@ const Mixes = () => {
 
   return (
     <div
-      className={cn(
-        'w-full grid gap-2 p-4 pt-0',
-        width < 800 ? 'grid-cols-2' : ''
-      )}
+      className={cn('w-full grid gap-2', width < 800 ? 'grid-cols-2' : '')}
       ref={ref}
     >
       <div className='grid w-full gap-2'>
         <div
           className={cn(
             'w-full grid gap-1',
-            width < 800 ? 'grid-cols-1 h-60' : 'grid-cols-4 h-12'
+            width < 600 ? 'grid-cols-1 h-60' : 'grid-cols-4 h-12'
           )}
         >
-          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 flex items-center gap-2 hover:bg-zinc-400/40'>
-            <div className='rounded-sm relative w-[36px] h-[36px]'>
-              <Image
-                alt='album'
-                src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                fill
-                className='object-cover rounded-sm'
-              />
+          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 flex items-center gap-2 hover:bg-zinc-400/10 rounded-md justify-between '>
+            <div className='flex items-center gap-2'>
+              <div className='rounded-sm relative w-[36px] h-[36px]'>
+                <Image
+                  alt='album'
+                  src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  fill
+                  className='object-cover rounded-sm'
+                />
+              </div>
+              <span className='text-sm text-primary-foreground/10'>
+                Hüzünlü Mix
+              </span>
             </div>
-            <span className='text-sm text-primary-foreground/10'>
-              Hüzünlü Mix
-            </span>
+            <div className='text-green-600 mr-2'></div>
           </div>
-          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/40 flex items-center gap-2'>
-            <div className='rounded-sm relative w-[36px] h-[36px]'>
-              <Image
-                alt='album'
-                src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                fill
-                className='object-cover rounded-sm'
-              />
+          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
+            <div className='flex items-center gap-2'>
+              <div className='rounded-sm relative w-[36px] h-[36px]'>
+                <Image
+                  alt='album'
+                  src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  fill
+                  className='object-cover rounded-sm'
+                />
+              </div>
+              <span className='text-sm text-primary-foreground/10'>
+                Hüzünlü Mix
+              </span>
             </div>
-            <span className='text-sm text-primary-foreground/10'>
-              Hüzünlü Mix
-            </span>
+            <div className='text-green-600 mr-2'></div>
           </div>{' '}
-          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/40 flex items-center gap-2'>
-            <div className='rounded-sm relative w-[36px] h-[36px]'>
-              <Image
-                alt='album'
-                src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                fill
-                className='object-cover rounded-sm'
-              />
+          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
+            <div className='flex items-center gap-2'>
+              <div className='rounded-sm relative w-[36px] h-[36px]'>
+                <Image
+                  alt='album'
+                  src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  fill
+                  className='object-cover rounded-sm'
+                />
+              </div>
+              <span className='text-sm text-primary-foreground/10'>
+                Hüzünlü Mix
+              </span>
             </div>
-            <span className='text-sm text-primary-foreground/10'>
-              Hüzünlü Mix
-            </span>
+            <div className='text-green-600 mr-2'></div>
           </div>{' '}
-          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/40 flex items-center gap-2'>
-            <div className='rounded-sm relative w-[36px] h-[36px]'>
-              <Image
-                alt='album'
-                src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                fill
-                className='object-cover rounded-sm'
-              />
+          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
+            <div className='flex items-center gap-2'>
+              <div className='rounded-sm relative w-[36px] h-[36px]'>
+                <Image
+                  alt='album'
+                  src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  fill
+                  className='object-cover rounded-sm'
+                />
+              </div>
+              <span className='text-sm text-primary-foreground/10'>
+                Hüzünlü Mix
+              </span>
             </div>
-            <span className='text-sm text-primary-foreground/10'>
-              Hüzünlü Mix
-            </span>
+            <div className='text-green-600 mr-2'></div>
           </div>
         </div>
       </div>
@@ -96,57 +105,69 @@ const Mixes = () => {
             width < 800 ? 'grid-cols-1 h-60' : 'grid-cols-4 h-12'
           )}
         >
-          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/40 flex items-center gap-2'>
-            <div className='rounded-sm relative w-[36px] h-[36px]'>
-              <Image
-                alt='album'
-                src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                fill
-                className='object-cover rounded-sm'
-              />
+          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
+            <div className='flex items-center gap-2'>
+              <div className='rounded-sm relative w-[36px] h-[36px]'>
+                <Image
+                  alt='album'
+                  src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  fill
+                  className='object-cover rounded-sm'
+                />
+              </div>
+              <span className='text-sm text-primary-foreground/10'>
+                Hüzünlü Mix
+              </span>
             </div>
-            <span className='text-sm text-primary-foreground/10'>
-              Hüzünlü Mix
-            </span>
+            <div className='text-green-600 mr-2'></div>
           </div>{' '}
-          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/40 flex items-center gap-2'>
-            <div className='rounded-sm relative w-[36px] h-[36px]'>
-              <Image
-                alt='album'
-                src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                fill
-                className='object-cover rounded-sm'
-              />
+          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
+            <div className='flex items-center gap-2'>
+              <div className='rounded-sm relative w-[36px] h-[36px]'>
+                <Image
+                  alt='album'
+                  src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  fill
+                  className='object-cover rounded-sm'
+                />
+              </div>
+              <span className='text-sm text-primary-foreground/10'>
+                Hüzünlü Mix
+              </span>
             </div>
-            <span className='text-sm text-primary-foreground/10'>
-              Hüzünlü Mix
-            </span>
+            <div className='text-green-600 mr-2'></div>
           </div>{' '}
-          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/40 flex items-center gap-2'>
-            <div className='rounded-sm relative w-[36px] h-[36px]'>
-              <Image
-                alt='album'
-                src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                fill
-                className='object-cover rounded-sm'
-              />
+          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
+            <div className='flex items-center gap-2'>
+              <div className='rounded-sm relative w-[36px] h-[36px]'>
+                <Image
+                  alt='album'
+                  src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  fill
+                  className='object-cover rounded-sm'
+                />
+              </div>
+              <span className='text-sm text-primary-foreground/10'>
+                Hüzünlü Mix
+              </span>
             </div>
-            <span className='text-sm text-primary-foreground/10'>
-              Hüzünlü Mix
-            </span>
+            <div className='text-green-600 mr-2'></div>
           </div>{' '}
-          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/40 flex items-center gap-2'>
-            <div className='rounded-sm relative w-[36px] h-[36px]'>
-              <Image
-                alt='album'
-                src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                fill
-                className='object-cover rounded-sm'
-              />
+          <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
+            <div className='flex items-center gap-2'>
+              <div className='rounded-sm relative w-[36px] h-[36px]'>
+                <Image
+                  alt='album'
+                  src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  fill
+                  className='object-cover rounded-sm'
+                />
+              </div>
+              <span className='text-sm text-primary-foreground/10'>
+                Hüzünlü Mix
+              </span>
             </div>
-            <span className='text-sm text-primary-foreground/10'>
-              Hüzünlü Mix
-            </span>
+            <div className='text-green-600 mr-2'></div>
           </div>
         </div>
       </div>

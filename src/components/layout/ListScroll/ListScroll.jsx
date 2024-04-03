@@ -39,7 +39,7 @@ const ListScroll = () => {
           <List />
         </div>
       </div>
-      <ScrollArea className='h-[600px] w-full rounded-md'>
+      <ScrollArea className='h-1/2 w-full rounded-md'>
         <div className='pr-2'>
           {tags.map((tag) => (
             <Link
