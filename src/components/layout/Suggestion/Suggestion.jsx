@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useEffect, useRef, useState } from 'react';
-import { cn } from '@/lib/utils';
 
 const Suggestion = () => {
   const [width, setWidth] = useState(0);
@@ -23,7 +22,7 @@ const Suggestion = () => {
     return () => resizeObserver.disconnect();
   }, [ref]);
 
-  const tags = Array.from({ length: Math.floor(width / 200) }).map(
+  const tags = Array.from({ length: Math.floor(width / 175) }).map(
     (_, i, a) => `${a.length - i}`
   );
   console.log(tags);
