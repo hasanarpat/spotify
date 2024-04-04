@@ -22,7 +22,6 @@ const ListScroll = () => {
         const boundingRect = current.getBoundingClientRect();
         const { width } = boundingRect;
         setWidth(Math.round(width));
-        console.log(width);
       }
     });
     resizeObserver.observe(ref.current);
@@ -104,8 +103,8 @@ const ListScroll = () => {
                 <Image
                   alt='album'
                   src='https://images.unsplash.com/photo-1526656001029-20a71b17f7ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                  width={width < 200 ? 80 : 50 || 50}
-                  height={width < 200 ? 80 : 50 || 50}
+                  width={60}
+                  height={60}
                   className='object-cover aspect-square rounded-sm'
                 />
                 <div

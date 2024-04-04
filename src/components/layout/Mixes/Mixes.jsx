@@ -14,7 +14,6 @@ const Mixes = () => {
         const boundingRect = current.getBoundingClientRect();
         const { width } = boundingRect;
         setWidth(Math.round(width));
-        console.log(width);
       }
     });
     resizeObserver.observe(ref.current);

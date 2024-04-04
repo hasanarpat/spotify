@@ -20,7 +20,7 @@ import { cn } from '@/lib/utils';
 
 const Player = () => {
   return (
-    <div className='absolute bottom-0 bg-background w-full h-20 p-2 px-4'>
+    <div className='absolute bottom-0 bg-background w-full h-20 p-2 px-7'>
       <div className='w-full h-full flex items-center justify-between'>
         <div className='flex gap-3'>
           <div className='relative w-14 h-14 group'>

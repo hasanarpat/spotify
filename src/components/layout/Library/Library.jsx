@@ -15,7 +15,6 @@ export const Library = () => {
         const boundingRect = current.getBoundingClientRect();
         const { width } = boundingRect;
         setWidth(Math.round(width));
-        console.log(width);
       }
     });
     resizeObserver.observe(ref.current);
@@ -24,7 +23,10 @@ export const Library = () => {
 
   return (
     <div
-      className='flex flex-col items-start justify-start gap-4 p-3 bg-primary rounded-xl'
+      className={cn(
+        'flex flex-col items-start justify-start gap-4 bg-primary rounded-xl',
+        width < 200 ? 'py-3' : 'p-3'
+      )}
       ref={ref}
     >
       <div className='flex items-center justify-between w-full p-2'>

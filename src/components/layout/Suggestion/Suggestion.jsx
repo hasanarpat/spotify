@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useEffect, useRef, useState } from 'react';
-import Link from "next/link"
+import Link from 'next/link';
 
 const Suggestion = () => {
   const [width, setWidth] = useState(0);
@@ -16,7 +16,6 @@ const Suggestion = () => {
         const boundingRect = current.getBoundingClientRect();
         const { width } = boundingRect;
         setWidth(Math.round(width));
-        console.log(width);
       }
     });
     resizeObserver.observe(ref.current);
@@ -26,7 +25,6 @@ const Suggestion = () => {
   const tags = Array.from({ length: Math.floor(width / 175) }).map(
     (_, i, a) => `${a.length - i}`
   );
-  console.log(tags);
 
   return (
     <div className='flex gap-1 w-full' ref={ref}>
@@ -54,7 +52,10 @@ const Suggestion = () => {
         </div> */}
       {tags.map((item) => (
         <>
-          <Link href="/" className='flex flex-col items-start w-full hover:bg-zinc-500/20 p-2 rounded-md relative group'>
+          <Link
+            href='/'
+            className='flex flex-col items-start w-full hover:bg-zinc-500/20 p-2 rounded-md relative group'
+          >
             <div className='w-full aspect-square relative rounded-lg'>
               <Image
                 alt='album'
@@ -69,7 +70,7 @@ const Suggestion = () => {
             </p>
             <Button
               variant='ghost'
-              className='absolute right-2 top-1/2 mt-2 bg-green-500 rounded-full p-0 w-14 h-14 aspect-square hover:scale-105 hover:bg-green-400 hidden group-hover:flex transition-all duration-200 ease-in'
+              className='absolute right-2 top-28 mt-2 bg-green-500 rounded-full p-0 w-14 h-14 aspect-square hover:scale-105 hover:bg-green-400 hidden group-hover:flex transition-all duration-200 ease-in'
             >
               <Play className='fill-black stroke-black' />
             </Button>
