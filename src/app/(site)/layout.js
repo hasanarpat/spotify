@@ -10,8 +10,6 @@ import {
   ResizablePanelGroup,
 } from '@/components/ui/resizable';
 import Link from 'next/link';
-import { Home, LibraryBig, Search, Plus, ArrowRight } from 'lucide-react';
-import ListScroll from '@/components/layout/ListScroll/ListScroll';
 import PlayingNow from '@/components/layout/PlayingNow/PlayingNow';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Button } from '@/components/ui/button';
@@ -31,6 +29,8 @@ import {
   ExternalLink,
 } from 'lucide-react';
 import Image from 'next/image';
+import { LeftBarNav } from '@/components/layout/LeftBarNav/LeftBarNav';
+import { Library } from '@/components/layout/Library/Library';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -55,46 +55,19 @@ export default function RootLayout({ children }) {
                 maxSize={75}
                 className='rounded-xl flex flex-col gap-2'
               >
-                <div className='flex flex-col items-start justify-center gap-6 h-[110px] p-6 bg-primary rounded-xl text-primary-foreground'>
-                  <Link href='/'>
-                    <span className='flex items-center gap-5 hover:text-white font-semibold text-md'>
-                      <Home className='inline' /> Ana sayfa
-                    </span>
-                  </Link>
-                  <Link href='/search'>
-                    <span className='flex items-center gap-5 hover:text-white font-semibold text-md'>
-                      <Search className='inline' /> Ara
-                    </span>
-                  </Link>
-                </div>
-                <div className='flex flex-col items-start justify-start gap-4 p-3 bg-primary rounded-xl'>
-                  <div className='flex items-center justify-between w-full p-2'>
-                    <span className='flex items-center justify-between gap-2 text-primary-foreground hover:text-white font-semibold text-md cursor-pointer'>
-                      <LibraryBig />
-                      Kitaplığın
-                    </span>
-                    <span className='flex items-center gap-3 text-primary-foreground hover:text-white'>
-                      <span className='text-primary-foreground hover:text-white cursor-pointer'>
-                        <Plus />
-                      </span>
-                      <span className='text-primary-foreground hover:text-white cursor-pointer'>
-                        <ArrowRight />
-                      </span>
-                    </span>
-                  </div>
-                  <ListScroll />
-                </div>
+                <LeftBarNav />
+                <Library />
               </ResizablePanel>
               <ResizableHandle className='bg-transparent' />
               <ResizablePanel
                 defaultSize={55}
                 minSize={30}
-                maxSize={83}
+                maxSize={96}
                 className='rounded-xl'
               >
                 <ScrollArea className='h-[calc(100svh-60px)] w-full rounded-md pb-5'>
                   {/* MAKE BG TRANSPARENT AT TOP 0 AFTER SCROLL MAKE ITS BG PRIMARY */}
-                  <div className='flex justify-between items-center w-full p-4 sticky top-0 z-50 bg-primary'>
+                  <nav className='flex justify-between items-center w-full p-4 sticky top-0 z-50 bg-primary'>
                     <div className='flex gap-2 items-center'>
                       <ChevronLeft className='bg-black/80 p-1 h-8 w-8 rounded-full' />
                       <ChevronRight className='bg-black/80 p-1 h-8 w-8 rounded-full' />
@@ -140,7 +113,7 @@ export default function RootLayout({ children }) {
                         </DropdownMenu>
                       </div>
                     </div>
-                  </div>
+                  </nav>
                   {children}
                 </ScrollArea>
               </ResizablePanel>

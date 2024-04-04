@@ -15,7 +15,7 @@ import {
 const PlayingNow = () => {
   return (
     <div className='p-5 px-3'>
-      <ScrollArea className='h-[calc(100svh-120px)] w-full rounded-md pb-5'>
+      <ScrollArea className='h-[calc(100svh-96px)] w-full rounded-md pb-5'>
         <div className='pr-4'>
           <div className='flex items-start justify-between'>
             <Link
