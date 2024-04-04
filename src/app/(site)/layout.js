@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
             >
               <ResizablePanel
                 defaultSize={20}
-                minSize={5}
+                minSize={4}
                 maxSize={75}
                 className='rounded-xl flex flex-col gap-2'
               >
@@ -89,7 +89,7 @@ export default function RootLayout({ children }) {
               <ResizablePanel
                 defaultSize={55}
                 minSize={30}
-                maxSize={82}
+                maxSize={83}
                 className='rounded-xl'
               >
                 <ScrollArea className='h-[calc(100svh-60px)] w-full rounded-md pb-5'>

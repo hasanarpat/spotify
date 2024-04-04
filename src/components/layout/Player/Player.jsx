@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Progress } from '@/components/ui/progress';
+import { Slider } from '@/components/ui/slider';
 import {
   Shuffle,
   Play,
@@ -16,6 +16,7 @@ import {
   Cast,
   Maximize2,
 } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const Player = () => {
   return (
@@ -57,23 +58,33 @@ const Player = () => {
             </div>
             <div className='flex items-center gap-2 text-xs font-semibold'>
               <span className='text-accent/50'>1:43</span>
-              <Progress value={33} className='bg-secondary h-1' />
+              <Slider
+                defaultValue={[50]}
+                max={100}
+                step={1}
+                className={cn('bg-secondary h-1')}
+              />
               <span className='text-accent/50'>2:47</span>
             </div>
           </div>
         </div>
         <div className=''>
-          <div className='flex gap-3 items-center'>
-            <Speaker className='h-5 w-5 text-accent/50 hover:text-white hover:scale-110' />
-            <MicVocal className='h-5 w-5 text-accent/50 hover:text-white hover:scale-110' />
-            <ListMusic className='h-5 w-5 text-accent/50 hover:scale-110' />
-            <MonitorPlay className='h-5 w-5 text-accent/50 hover:text-white hover:scale-110' />
+          <div className='flex gap-4 items-center'>
+            <Speaker className='h-4 w-4 text-accent/50 hover:text-white hover:scale-110' />
+            <MicVocal className='h-4 w-4 text-accent/50 hover:text-white hover:scale-110' />
+            <ListMusic className='h-4 w-4 text-accent/50 hover:scale-110' />
+            <MonitorPlay className='h-4 w-4 text-accent/50 hover:text-white hover:scale-110' />
             <div className='flex items-center gap-1'>
               <Volume2 className='h-6 w-6 text-accent/50 hover:text-white hover:scale-110' />
-              <Progress value={33} className='bg-secondary h-1 w-16' />
+              <Slider
+                defaultValue={[50]}
+                max={100}
+                step={1}
+                className={cn('w-16 bg-secondary h-1')}
+              />
             </div>
-            <Cast className='h-5 w-5 text-white hover:scale-110' />
-            <Maximize2 className='h-5 w-5 text-accent/50 hover:text-white hover:scale-110' />
+            <Cast className='h-4 w-4 text-white hover:scale-110' />
+            <Maximize2 className='h-4 w-4 text-accent/50 hover:text-white hover:scale-110' />
           </div>
         </div>
       </div>
