@@ -28,7 +28,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className='w-full p-6 px-8 bg-primary'>
+        <div className='w-full p-6 px-8 bg-primary flex flex-col items-start'>
           <div className='flex items-center justify-between w-full'>
             <Link href='/go-to-suggestions' className='hover:underline'>
               <span className='text-lg font-bold'>Yakında Çalınanlar</span>
@@ -42,7 +42,7 @@ export default function HomePage() {
           </div>
           <Suggestion />
         </div>
-        <div className='w-full p-6 px-8 bg-primary'>
+        <div className='w-full p-6 px-8 bg-primary gap-5 flex flex-col items-start'>
           <div className='flex items-center justify-between w-full'>
             <Link href='/go-to-suggestions' className='hover:underline'>
               <span className='text-lg font-bold'>
@@ -58,7 +58,7 @@ export default function HomePage() {
           </div>
           <Suggestion />
         </div>
-        <div className='w-full p-6 px-8 bg-primary'>
+        <div className='w-full p-6 px-8 bg-primary gap-5 flex flex-col items-start'>
           <div className='flex items-center justify-between w-full'>
             <Link href='/go-to-suggestions' className='hover:underline'>
               <span className='text-lg font-bold'>
@@ -74,7 +74,7 @@ export default function HomePage() {
           </div>
           <Suggestion />
         </div>
-        <div className='w-full p-6 px-8 bg-primary'>
+        <div className='w-full p-6 px-8 bg-primary gap-5 flex flex-col items-start'>
           <div className='flex items-center justify-between w-full'>
             <Link href='/go-to-suggestions' className='hover:underline'>
               <span className='text-lg font-bold'>Popüler radyolar</span>
@@ -88,7 +88,7 @@ export default function HomePage() {
           </div>
           <Suggestion />
         </div>
-        <div className='w-full p-6 px-8 bg-primary'>
+        <div className='w-full p-6 px-8 bg-primary gap-5 flex flex-col items-start'>
           <div className='flex items-center justify-between w-full'>
             <Link href='/go-to-suggestions' className='hover:underline'>
               <span className='text-lg font-bold'>Günlük müzik ihtiyacın</span>
@@ -102,7 +102,7 @@ export default function HomePage() {
           </div>
           <Suggestion />
         </div>
-        <div className='w-full p-6 px-8 bg-primary'>
+        <div className='w-full p-6 px-8 bg-primary gap-5 flex flex-col items-start'>
           <div className='flex items-center justify-between w-full'>
             <Link href='/go-to-suggestions' className='hover:underline'>
               <span className='text-lg font-bold'>

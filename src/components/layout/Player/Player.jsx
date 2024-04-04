@@ -7,7 +7,7 @@ import {
   ChevronDown,
   SkipBack,
   SkipForward,
-  IterationCw,
+  Repeat,
   Speaker,
   MicVocal,
   ListMusic,
@@ -54,7 +54,7 @@ const Player = () => {
               <SkipBack className='h-5 w-5 text-accent/50 hover:text-white fill-white hover:scale-110' />
               <Play className='h-5 w-5 text-white fill-white hover:scale-110' />
               <SkipForward className='h-5 w-5 text-accent/50 hover:text-white fill-white hover:scale-110' />
-              <IterationCw className='h-5 w-5 text-accent/50 hover:text-white hover:scale-110' />
+              <Repeat className='h-5 w-5 text-accent/50 hover:text-white hover:scale-110' />
             </div>
             <div className='flex items-center gap-2 text-xs font-semibold'>
               <span className='text-accent/50'>1:43</span>
@@ -62,7 +62,7 @@ const Player = () => {
                 defaultValue={[50]}
                 max={100}
                 step={1}
-                className={cn('bg-secondary h-1')}
+                className={cn('bg-primary h-1')}
               />
               <span className='text-accent/50'>2:47</span>
             </div>
@@ -80,7 +80,7 @@ const Player = () => {
                 defaultValue={[50]}
                 max={100}
                 step={1}
-                className={cn('w-16 bg-secondary h-1')}
+                className={cn('w-16 bg-secondary h-0.5')}
               />
             </div>
             <Cast className='h-4 w-4 text-white hover:scale-110' />

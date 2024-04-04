@@ -30,7 +30,7 @@ const Mixes = () => {
         <div
           className={cn(
             'w-full grid gap-1',
-            width < 800 ? 'grid-cols-1 h-60' : 'grid-cols-4 h-12'
+            width < 800 ? 'grid-cols-1 h-64' : 'grid-cols-4 h-16'
           )}
         >
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
@@ -103,7 +103,7 @@ const Mixes = () => {
         <div
           className={cn(
             'w-full grid gap-1',
-            width < 800 ? 'grid-cols-1 h-60' : 'grid-cols-4 h-12'
+            width < 800 ? 'grid-cols-1 h-64' : 'grid-cols-4 h-16'
           )}
         >
           <div className='w-full h-full bg-zinc-700/20 bg-opacity-45 hover:bg-zinc-400/10 rounded-md justify-between  flex items-center gap-2'>
